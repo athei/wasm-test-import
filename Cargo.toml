@@ -1,0 +1,13 @@
+[package]
+name = "env_linking"
+version = "0.1.0"
+authors = ["Alexander Theißen <alex.theissen@me.com>"]
+edition = "2018"
+
+[lib]
+name = "contract"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+dep = { path = "dep" }
